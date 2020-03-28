@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 export default class HomeTop3 extends React.Component {
 	render() {
 		return (

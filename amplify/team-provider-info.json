@@ -10,6 +10,14 @@
             "StackName": "amplify-localforlife-dev-12129",
             "StackId": "arn:aws:cloudformation:us-west-2:240119925395:stack/amplify-localforlife-dev-12129/21257150-70cd-11ea-8e90-062d4fc47da6",
             "AmplifyAppId": "df99x7ztoa3o3"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "df99x7ztoa3o3",
+                    "type": "cicd"
+                }
+            }
         }
     }
 }
