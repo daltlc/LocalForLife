@@ -3,9 +3,10 @@ import logo from './logo.svg';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HomeContent from './components/HomeContent';
+import SubmitForm from './components/SubmitForm';
+import About from './components/About';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Navbar, Nav, Form, Button, FormControl } from 'react-bootstrap';
-import SubmitForm from './components/SubmitForm';
 
 function App() {
 	return (
@@ -36,7 +37,9 @@ function App() {
 					{/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
 					<Switch>
-						<Route path="/about">{/* <About /> */}</Route>
+						<Route path="/about">
+							<About />
+						</Route>
 						<Route path="/users">{/* <Users /> */}</Route>
 						<Route path="/submit">
 							<SubmitForm />
