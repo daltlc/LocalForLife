@@ -2,7 +2,7 @@ type Buisness @model {
 	id: ID!
 	yourName: String!
 	nameOfBusiness: String!
-	description: String
+	yourEmail: String
 	image: String
 	deal: String
 	siteURL: String

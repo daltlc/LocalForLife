@@ -7,7 +7,7 @@ export const onCreateBuisness = /* GraphQL */ `
       id
       yourName
       nameOfBusiness
-      description
+      yourEmail
       image
       deal
       siteURL
@@ -20,7 +20,7 @@ export const onUpdateBuisness = /* GraphQL */ `
       id
       yourName
       nameOfBusiness
-      description
+      yourEmail
       image
       deal
       siteURL
@@ -33,7 +33,7 @@ export const onDeleteBuisness = /* GraphQL */ `
       id
       yourName
       nameOfBusiness
-      description
+      yourEmail
       image
       deal
       siteURL

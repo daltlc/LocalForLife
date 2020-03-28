@@ -6,7 +6,9 @@ import SubmitForm from './components/SubmitForm';
 import About from './components/About';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Navbar, Nav, Form, Button, FormControl } from 'react-bootstrap';
-
+import Amplify, { API, graphqlOperation } from 'aws-amplify';
+import config from './aws-exports';
+Amplify.configure(config);
 function App() {
 	return (
 		<div className="App">

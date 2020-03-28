@@ -3,6 +3,7 @@ import { Button, InputGroup, FormControl } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { API, graphqlOperation } from 'aws-amplify';
 import { createBuisness } from '../graphql/mutations';
+import { withRouter } from 'react-router-dom';
 
 export default class SubmitForm extends React.Component {
 	constructor(props) {
@@ -17,17 +18,14 @@ export default class SubmitForm extends React.Component {
 			businesses: []
 		};
 	}
-
 	handleOnChange = (event) => {
 		this.setState({
 			[event.target.name]: event.target.value
 		});
 	};
 
-	addInfo = async (event) => {
+	addInfo = async (event, path) => {
 		const { yourEmail, nameOfBusiness, yourName, deal, siteURL, image, businesses } = this.state;
-
-		event.preventDefault();
 
 		const input = {
 			yourEmail,
@@ -50,11 +48,33 @@ export default class SubmitForm extends React.Component {
 			siteURL: '',
 			image: ''
 		});
+
+		this.props.history.push(path);
 	};
 	render() {
 		return (
 			<div className="row submit-main">
-				<div className="col-xl-6 submit-main__instructions" />
+				<div className="col-xl-6 submit-main__instructions">
+					<h1>Promotion Submission</h1>
+					<p>
+						In this global time of need, local solidarity is everything. Please use this form if you are a
+						local business offering a promotion that may be accessed remotely.
+					</p>
+					<p>PLEASE READ</p>
+					<p>Follow these rules to submit your promotion: </p>
+					<ul className="list-no-styles">
+						<li>You MUST be a local business</li>
+						<li>Only one submission per business</li>
+						<li>The value of your offer must be at least a $5 </li>
+						<li>We reserve the right to decline submissions for any reason</li>
+						<li>
+							These promotions are meant to offer community and small business support, while maintaining
+							the safety of both. Your discount must be accessed remotely, or to be used at a later date
+							if businesses are currently closed.
+						</li>
+					</ul>
+					Stay safe and support local!
+				</div>
 				<div className="col-xl-6">
 					<InputGroup size="sm" className="mb-3">
 						<InputGroup.Prepend>

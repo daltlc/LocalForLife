@@ -7,7 +7,7 @@ export const getBuisness = /* GraphQL */ `
       id
       yourName
       nameOfBusiness
-      description
+      yourEmail
       image
       deal
       siteURL
@@ -25,7 +25,7 @@ export const listBuisnesss = /* GraphQL */ `
         id
         yourName
         nameOfBusiness
-        description
+        yourEmail
         image
         deal
         siteURL

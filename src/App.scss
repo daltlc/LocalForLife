@@ -55,11 +55,15 @@
   }
 
   .submit-main {
-
+    ul {
+      list-style: none;
+    }
 
     &__instructions {
       background-color: black !important;
       height: 40vh;
+
+  
     }
 
   }
