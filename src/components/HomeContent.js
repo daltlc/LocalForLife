@@ -15,7 +15,13 @@ class NavComp extends React.Component {
 					<div className="col-xl-6 home-main__left">{/* <p>Logo</p> */}</div>
 					<div className="col-xl-6 home-main__right">
 						<h1>We want to empower the creativity, diversity and community that makes our city thrive.</h1>
-						<p>para parappapapra parapr par par pa rpa rpa rppararapprpa raprarp a par apraarp rap</p>
+						<br />
+						<p>
+							In an effort to support these businesses during these trying times of global health concern
+							and a call for social distancing, we are working to create a network where people can engage
+							local businesses remotely.
+						</p>
+						<p>Join us in helping now or submit your own local business!</p>
 						<Button
 							onClick={() => this.nextPath('/submit')}
 							className="home-main__button"
