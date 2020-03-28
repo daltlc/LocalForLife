@@ -1,0 +1,54 @@
+@import "~bootstrap/scss/bootstrap";
+
+.nav-main {
+  a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black!important;
+    &:hover {
+      border-bottom: none;
+      text-decoration: none;
+      opacity: 0.7;
+    }
+  }
+  margin-bottom: 60px;
+  .logo{
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+.home-main {
+  font-family: 'Segoe UI',
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+
+  &__left {
+    background-color: blue;
+  }
+
+  &__button {
+    margin-top: 60px !important;
+  }
+
+  .home-top-3 {
+    height: 40vh;
+    margin-top: 40px;
+
+    .item {
+      background-color: black;
+      padding: 20px;
+    }
+  }
+
+  .submit-main {
+
+
+    &__instructions {
+      background-color: black!important;
+      height: 40vh;
+    }
+
+  }
+}

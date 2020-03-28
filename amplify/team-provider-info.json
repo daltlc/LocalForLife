@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-localforlife-dev-12129-authRole",
+            "UnauthRoleArn": "arn:aws:iam::240119925395:role/amplify-localforlife-dev-12129-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::240119925395:role/amplify-localforlife-dev-12129-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "amplify-localforlife-dev-12129-deployment",
+            "UnauthRoleName": "amplify-localforlife-dev-12129-unauthRole",
+            "StackName": "amplify-localforlife-dev-12129",
+            "StackId": "arn:aws:cloudformation:us-west-2:240119925395:stack/amplify-localforlife-dev-12129/21257150-70cd-11ea-8e90-062d4fc47da6",
+            "AmplifyAppId": "df99x7ztoa3o3"
+        }
+    }
+}
