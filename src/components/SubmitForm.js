@@ -15,7 +15,6 @@ export default class SubmitForm extends React.Component {
 			deal: '',
 			phoneNumber: '',
 			siteURL: '',
-			image: '',
 			businesses: []
 		};
 	}
@@ -26,7 +25,7 @@ export default class SubmitForm extends React.Component {
 	};
 
 	addInfo = async (event, path) => {
-		const { yourEmail, nameOfBusiness, yourName, deal, siteURL, image, phoneNumber, businesses } = this.state;
+		const { yourEmail, nameOfBusiness, yourName, deal, siteURL, phoneNumber, businesses } = this.state;
 
 		const input = {
 			yourEmail,
@@ -34,8 +33,7 @@ export default class SubmitForm extends React.Component {
 			yourName,
 			deal,
 			phoneNumber,
-			siteURL,
-			image
+			siteURL
 		};
 
 		const result = await API.graphql(graphqlOperation(createBuisness, { input }));
@@ -48,9 +46,9 @@ export default class SubmitForm extends React.Component {
 			yourName: '',
 			deal: '',
 			siteURL: '',
-			image: '',
 			phoneNumber: ''
 		});
+		console.log('done');
 
 		// this.props.history.push(path);
 	};
@@ -147,7 +145,7 @@ export default class SubmitForm extends React.Component {
 							aria-describedby="inputGroup-sizing-sm"
 						/>
 					</InputGroup>
-					<InputGroup size="sm" className="mb-3">
+					{/* <InputGroup size="sm" className="mb-3">
 						<InputGroup.Prepend>
 							<InputGroup.Text id="inputGroup-sizing-sm">Upload Image*</InputGroup.Text>
 						</InputGroup.Prepend>
@@ -157,7 +155,7 @@ export default class SubmitForm extends React.Component {
 							aria-label="Small"
 							aria-describedby="inputGroup-sizing-sm"
 						/>
-					</InputGroup>
+					</InputGroup> */}
 					{/* <Form.Group controlId="exampleForm.ControlSelect1">
 						<Form.Label>Category of business</Form.Label>
 						<Form.Control as="select">
