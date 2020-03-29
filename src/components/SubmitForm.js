@@ -54,7 +54,7 @@ export default class SubmitForm extends React.Component {
 	render() {
 		return (
 			<div className="row submit-main">
-				<div className="col-xl-6 submit-main__instructions">
+				<div className="col-xl-5 submit-main__instructions">
 					<h1>Promotion Submission</h1>
 					<p>
 						In this global time of need, local solidarity is everything. Please use this form if you are a
@@ -75,7 +75,7 @@ export default class SubmitForm extends React.Component {
 					</ul>
 					Stay safe and support local!
 				</div>
-				<div className="col-xl-6">
+				<div className="col-xl-7 submit-main__form">
 					<InputGroup size="sm" className="mb-3">
 						<InputGroup.Prepend>
 							<InputGroup.Text id="inputGroup-sizing-sm">Your Name*</InputGroup.Text>

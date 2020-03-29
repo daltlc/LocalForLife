@@ -17,9 +17,9 @@ class NavComp extends React.Component {
 						<h1>We want to empower the creativity, diversity and community that makes our city thrive.</h1>
 						<br />
 						<p>
-							In an effort to support these businesses during these trying times of global health concern
-							and a call for social distancing, we are working to create a network where people can engage
-							local businesses remotely.
+							In an effort to support businesses during these trying times of global health concern and a
+							call for social distancing, we are working to create a network where people can engage local
+							businesses remotely.
 						</p>
 						<p>Join us in helping now or submit your own local business!</p>
 						<Button
