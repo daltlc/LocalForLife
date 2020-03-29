@@ -39,7 +39,7 @@ export default class HomeTop3 extends React.Component {
 								<p>
 									<FaGlobeAmericas />
 									&nbsp;
-									<a href={buisness.siteURL}>{buisness.siteURL}</a>
+									<a href={buisness.siteURL}>Website or Deal</a>
 								</p>
 								<p>
 									<FaPhone />
