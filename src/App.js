@@ -20,7 +20,7 @@ function App() {
 			<header className="header" />
 			<Router>
 				<div className="container">
-					<Navbar bg="light" variant="light" collapseOnSelect expand="lg">
+					{/* <Navbar bg="light" variant="light" collapseOnSelect expand="lg">
 						<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 						<Navbar.Collapse id="responsive-navbar-nav" className="nav-main">
 							<Nav className="mr-auto">
@@ -46,6 +46,38 @@ function App() {
 									<FaInstagram />
 								</a>
 							</Navbar.Collapse>
+						</Navbar.Collapse>
+					</Navbar> */}
+
+					<Navbar bg="light" expand="lg">
+						<Navbar.Brand href="#home">
+							<strong>LocalForLife</strong>
+						</Navbar.Brand>
+						<Navbar.Toggle aria-controls="basic-navbar-nav" />
+						<Navbar.Collapse id="basic-navbar-nav" className="nav-main">
+							<Nav className="mr-auto">
+								{/* <Nav.Link className="logo" href="#home">
+									<Link to="/">LocalForLife</Link>
+								</Nav.Link> */}
+								<Nav.Link href="#home">
+									<Link to="/">Home</Link>
+								</Nav.Link>
+								<Nav.Link href="#submit">
+									<Link to="/submit">Submit</Link>
+								</Nav.Link>
+								<Nav.Link href="#resources">
+									<Link to="/resources">Resources</Link>
+								</Nav.Link>
+								<Nav.Link href="#allbusinesses">
+									<Link to="/allbusinesses">All Businesses</Link>
+								</Nav.Link>
+								<Nav.Link href="mailto:seattlelocalforlife@gmail.com">Contact</Nav.Link>
+							</Nav>
+							<Form inline>
+								<a href="https://www.instagram.com/seattlelocalforlife/">
+									<FaInstagram />
+								</a>
+							</Form>
 						</Navbar.Collapse>
 					</Navbar>
 
