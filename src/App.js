@@ -13,11 +13,6 @@ import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import config from './aws-exports';
 import { FaInstagram } from 'react-icons/fa';
 import { createBrowserHistory } from 'history';
-const history = createBrowserHistory();
-const path = (/#!(\/.*)$/.exec(window.location.hash) || [])[1];
-if (path) {
-	history.replace(path);
-}
 
 Amplify.configure(config);
 function App() {
@@ -26,35 +21,6 @@ function App() {
 			<header className="header" />
 			<Router>
 				<div className="container">
-					{/* <Navbar bg="light" variant="light" collapseOnSelect expand="lg">
-						<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-						<Navbar.Collapse id="responsive-navbar-nav" className="nav-main">
-							<Nav className="mr-auto">
-								<Nav.Link className="logo" href="#home">
-									<Link to="/">LocalForLife</Link>
-								</Nav.Link>
-								<Nav.Link href="#home">
-									<Link to="/">Home</Link>
-								</Nav.Link>
-								<Nav.Link href="#submit">
-									<Link to="/submit">Submit</Link>
-								</Nav.Link>
-								<Nav.Link href="#resources">
-									<Link to="/resources">Resources</Link>
-								</Nav.Link>
-								<Nav.Link href="#allbusinesses">
-									<Link to="/allbusinesses">All Businesses</Link>
-								</Nav.Link>
-								<Nav.Link href="mailto:seattlelocalforlife@gmail.com">Contact</Nav.Link>
-							</Nav>
-							<Navbar.Collapse className="justify-content-end">
-								<a href="https://www.instagram.com/seattlelocalforlife/">
-									<FaInstagram />
-								</a>
-							</Navbar.Collapse>
-						</Navbar.Collapse>
-					</Navbar> */}
-
 					<Navbar bg="light" expand="lg">
 						<Navbar.Brand href="#home">
 							<strong>LocalForLife</strong>

@@ -7,9 +7,9 @@ import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<BrowserRouter forceRefresh={true}>
-			<App />
-		</BrowserRouter>
+		{/* <BrowserRouter forceRefresh={true}> */}
+		<App />
+		{/* </BrowserRouter> */}
 	</React.StrictMode>,
 	document.getElementById('root')
 );
