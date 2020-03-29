@@ -9,7 +9,6 @@ export const getBuisness = /* GraphQL */ `
       phoneNumber
       nameOfBusiness
       yourEmail
-      image
       deal
       siteURL
     }
@@ -28,7 +27,6 @@ export const listBuisnesss = /* GraphQL */ `
         phoneNumber
         nameOfBusiness
         yourEmail
-        image
         deal
         siteURL
       }

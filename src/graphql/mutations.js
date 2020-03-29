@@ -12,7 +12,6 @@ export const createBuisness = /* GraphQL */ `
       phoneNumber
       nameOfBusiness
       yourEmail
-      image
       deal
       siteURL
     }
@@ -29,7 +28,6 @@ export const updateBuisness = /* GraphQL */ `
       phoneNumber
       nameOfBusiness
       yourEmail
-      image
       deal
       siteURL
     }
@@ -46,7 +44,6 @@ export const deleteBuisness = /* GraphQL */ `
       phoneNumber
       nameOfBusiness
       yourEmail
-      image
       deal
       siteURL
     }
