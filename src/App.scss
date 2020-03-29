@@ -27,10 +27,10 @@
     Verdana,
     sans-serif;
 
-    .viewa-all-button-container{
-      display: flex;
-      justify-content: center;
-    }
+  .viewa-all-button-container {
+    display: flex;
+    justify-content: center;
+  }
 
   &__left {
     background-color: #fff;
@@ -51,32 +51,37 @@
     // height: 35vh;
     margin-top: 40px;
 
-    .item {
-      background-color: #E1E4EA;
-      padding: 20px;
-      color: black;
-      text-align: left;
-      h1{
-        text-align: center;
-        font-size: 34px;
+
+    &__inner {
+      padding-left: 0;
+
+      .item {
+        background-color: #f8f9fa;
+        padding: 20px;
+        color: black;
+        text-align: left;
+        border-radius: 4px;
+
+        h1 {
+          text-align: center;
+          font-size: 34px;
+          margin-bottom: 20px;
+        }
       }
     }
   }
 }
-  .submit-main {
+
+.submit-main {
 
 
-    &__instructions {
-      
+  &__instructions {}
 
-
-    }
-
-    &__form{
-      margin-top:30px;
-    }
-
+  &__form {
+    margin-top: 30px;
   }
+
+}
 
 .about-main {
   font-family: 'Segoe UI',

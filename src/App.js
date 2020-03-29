@@ -3,6 +3,7 @@ import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HomeContent from './components/HomeContent';
 import SubmitForm from './components/SubmitForm';
+import AllBusinesses from './components/AllBusinesses';
 import About from './components/About';
 import Resources from './components/Resources';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -24,14 +25,14 @@ function App() {
 							<Nav.Link href="#home">
 								<Link to="/">Home</Link>
 							</Nav.Link>
-							{/* <Nav.Link href="#about">
-								<Link to="/about">About</Link>
-							</Nav.Link> */}
 							<Nav.Link href="#submit">
 								<Link to="/submit">Submit</Link>
 							</Nav.Link>
 							<Nav.Link href="#resources">
 								<Link to="/resources">Resources</Link>
+							</Nav.Link>
+							<Nav.Link href="#allbusinesses">
+								<Link to="/allbusinesses">All Businesses</Link>
 							</Nav.Link>
 						</Nav>
 					</Navbar>
@@ -40,9 +41,9 @@ function App() {
             renders the first one that matches the current URL. */}
 
 					<Switch>
-						{/* <Route path="/about">
-							<About />
-						</Route> */}
+						<Route path="/allbusinesses">
+							<AllBusinesses />
+						</Route>
 						<Route path="/users">{/* <Users /> */}</Route>
 						<Route path="/submit">
 							<SubmitForm />

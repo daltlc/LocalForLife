@@ -13,7 +13,8 @@ class NavComp extends React.Component {
 			<div className="container home-main">
 				<div className="row">
 					<div className="col-xl-6 home-main__left">{/* <p>Logo</p> */}</div>
-					<div className="col-xl-6 home-main__right">
+					<div className="col-xl-1" />
+					<div className="col-xl-5 home-main__right">
 						<h1>We want to empower the creativity, diversity and community that makes our city thrive.</h1>
 						<br />
 						<p>

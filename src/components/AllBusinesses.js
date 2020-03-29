@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { API, graphqlOperation } from 'aws-amplify';
 import { listBuisnesss } from '../graphql/queries';
-import { FaGlobeAmericas, FaCoins, FaWarehouse, FaPhone } from 'react-icons/fa';
+import { FaGlobeAmericas, FaCoins, FaWarehouse } from 'react-icons/fa';
 
 export default class HomeTop3 extends React.Component {
 	state = {
@@ -22,7 +22,7 @@ export default class HomeTop3 extends React.Component {
 		return (
 			<div className="home-top-3">
 				<div className="row">
-					{this.state.businesses.slice(0, 3).map((buisness, index) => (
+					{this.state.businesses.map((buisness, index) => (
 						<div className="home-top-3__inner col-xl-4">
 							<div className="item">
 								<h1>{buisness.nameOfBusiness}</h1>
@@ -41,10 +41,7 @@ export default class HomeTop3 extends React.Component {
 									&nbsp;
 									{buisness.siteURL}
 								</p>
-								<p>
-									<FaPhone />
-									&nbsp;{buisness.phoneNumber}
-								</p>
+								{/* <p>{buisness.image}</p> */}
 							</div>
 						</div>
 					))}

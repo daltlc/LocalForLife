@@ -13,6 +13,7 @@ export default class SubmitForm extends React.Component {
 			nameOfBusiness: '',
 			yourName: '',
 			deal: '',
+			phoneNumber: '',
 			siteURL: '',
 			image: '',
 			businesses: []
@@ -25,13 +26,14 @@ export default class SubmitForm extends React.Component {
 	};
 
 	addInfo = async (event, path) => {
-		const { yourEmail, nameOfBusiness, yourName, deal, siteURL, image, businesses } = this.state;
+		const { yourEmail, nameOfBusiness, yourName, deal, siteURL, image, phoneNumber, businesses } = this.state;
 
 		const input = {
 			yourEmail,
 			nameOfBusiness,
 			yourName,
 			deal,
+			phoneNumber,
 			siteURL,
 			image
 		};
@@ -46,7 +48,8 @@ export default class SubmitForm extends React.Component {
 			yourName: '',
 			deal: '',
 			siteURL: '',
-			image: ''
+			image: '',
+			phoneNumber: ''
 		});
 
 		// this.props.history.push(path);
@@ -128,6 +131,17 @@ export default class SubmitForm extends React.Component {
 						</InputGroup.Prepend>
 						<FormControl
 							name="siteURL"
+							onChange={this.handleOnChange}
+							aria-label="Small"
+							aria-describedby="inputGroup-sizing-sm"
+						/>
+					</InputGroup>
+					<InputGroup size="sm" className="mb-3">
+						<InputGroup.Prepend>
+							<InputGroup.Text id="inputGroup-sizing-sm">Phone Number*</InputGroup.Text>
+						</InputGroup.Prepend>
+						<FormControl
+							name="phoneNumber"
 							onChange={this.handleOnChange}
 							aria-label="Small"
 							aria-describedby="inputGroup-sizing-sm"

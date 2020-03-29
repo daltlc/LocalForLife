@@ -13,7 +13,21 @@ export default class HomeTop3 extends React.Component {
 							<strong>Resource Links</strong>
 						</Card.Header>
 						<ListGroup variant="flush">
-							<ListGroup.Item />
+							<ListGroup.Item>
+								<a href="https://coronavirus.wa.gov/">https://coronavirus.wa.gov/</a>
+							</ListGroup.Item>
+							<ListGroup.Item>
+								<a href="https://www.dol.gov/coronavirus">https://www.dol.gov/coronavirus</a>
+							</ListGroup.Item>
+							<ListGroup.Item>
+								<a href="https://www.cdc.gov/coronavirus/resources.html">
+									https://www.cdc.gov/coronavirus/resources.html
+								</a>
+							</ListGroup.Item>
+							<ListGroup.Item>
+								<a href="http://coronavirusapi.com/">http://coronavirusapi.com/</a>
+							</ListGroup.Item>
+							{/* <ListGroup.Item>http://coronavirusapi.com/</ListGroup.Item> */}
 						</ListGroup>
 					</Card>
 				</div>

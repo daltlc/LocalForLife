@@ -6,6 +6,7 @@ export const onCreateBuisness = /* GraphQL */ `
     onCreateBuisness {
       id
       yourName
+      phoneNumber
       nameOfBusiness
       yourEmail
       image
@@ -19,6 +20,7 @@ export const onUpdateBuisness = /* GraphQL */ `
     onUpdateBuisness {
       id
       yourName
+      phoneNumber
       nameOfBusiness
       yourEmail
       image
@@ -32,6 +34,7 @@ export const onDeleteBuisness = /* GraphQL */ `
     onDeleteBuisness {
       id
       yourName
+      phoneNumber
       nameOfBusiness
       yourEmail
       image

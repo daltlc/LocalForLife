@@ -1,6 +1,7 @@
 type Buisness @model {
 	id: ID!
 	yourName: String!
+	phoneNumber: String
 	nameOfBusiness: String!
 	yourEmail: String
 	image: String

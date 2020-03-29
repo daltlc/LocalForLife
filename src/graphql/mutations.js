@@ -9,6 +9,7 @@ export const createBuisness = /* GraphQL */ `
     createBuisness(input: $input, condition: $condition) {
       id
       yourName
+      phoneNumber
       nameOfBusiness
       yourEmail
       image
@@ -25,6 +26,7 @@ export const updateBuisness = /* GraphQL */ `
     updateBuisness(input: $input, condition: $condition) {
       id
       yourName
+      phoneNumber
       nameOfBusiness
       yourEmail
       image
@@ -41,6 +43,7 @@ export const deleteBuisness = /* GraphQL */ `
     deleteBuisness(input: $input, condition: $condition) {
       id
       yourName
+      phoneNumber
       nameOfBusiness
       yourEmail
       image
