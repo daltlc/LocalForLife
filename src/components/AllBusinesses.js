@@ -38,7 +38,7 @@ export default class AllBusinesses extends React.Component {
 								<p>
 									<FaGlobeAmericas />
 									&nbsp;
-									{buisness.siteURL}
+									<a href={buisness.siteURL}>{buisness.siteURL}</a>
 								</p>
 								<p>
 									<FaPhone />

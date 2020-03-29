@@ -158,16 +158,16 @@ export default class SubmitForm extends React.Component {
 							aria-describedby="inputGroup-sizing-sm"
 						/>
 					</InputGroup>
-					<Form.Group controlId="exampleForm.ControlSelect1">
+					{/* <Form.Group controlId="exampleForm.ControlSelect1">
 						<Form.Label>Category of business</Form.Label>
 						<Form.Control as="select">
 							<option>Food</option>
 							<option>Retail</option>
 							<option>Online</option>
-							{/* <option>4</option>
-							<option>5</option> */}
+							<option>4</option>
+							<option>5</option>
 						</Form.Control>
-					</Form.Group>
+					</Form.Group> */}
 					<Button onClick={() => this.addInfo()} className="home-main__button" variant="primary" size="lg">
 						Submit
 					</Button>{' '}
