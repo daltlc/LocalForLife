@@ -1,5 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
 
+.navbar {
+  margin-bottom: 20px;
+}
+
 .nav-main {
   a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,8 +15,6 @@
       opacity: 0.7;
     }
   }
-
-  margin-bottom: 20px;
 
   .logo {
     font-weight: bold;
@@ -51,7 +53,7 @@
     // height: 35vh;
     margin-top: 40px;
     border-top: solid #cecece 0.2px;
-    padding-top:20px;
+    padding-top: 20px;
 
 
     &__inner {
