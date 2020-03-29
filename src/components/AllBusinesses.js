@@ -5,7 +5,7 @@ import { API, graphqlOperation } from 'aws-amplify';
 import { listBuisnesss } from '../graphql/queries';
 import { FaGlobeAmericas, FaCoins, FaWarehouse } from 'react-icons/fa';
 
-export default class HomeTop3 extends React.Component {
+export default class AllBusinesses extends React.Component {
 	state = {
 		businesses: []
 	};
@@ -20,10 +20,10 @@ export default class HomeTop3 extends React.Component {
 	}
 	render() {
 		return (
-			<div className="home-top-3">
+			<div className="all-businesses-main">
 				<div className="row">
 					{this.state.businesses.map((buisness, index) => (
-						<div className="home-top-3__inner col-xl-4">
+						<div className="all-businesses-main__inner col-xl-4">
 							<div className="item">
 								<h1>{buisness.nameOfBusiness}</h1>
 
