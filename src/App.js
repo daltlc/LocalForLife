@@ -24,9 +24,9 @@ function App() {
 							<Nav.Link href="#home">
 								<Link to="/">Home</Link>
 							</Nav.Link>
-							<Nav.Link href="#about">
+							{/* <Nav.Link href="#about">
 								<Link to="/about">About</Link>
-							</Nav.Link>
+							</Nav.Link> */}
 							<Nav.Link href="#submit">
 								<Link to="/submit">Submit</Link>
 							</Nav.Link>
@@ -38,10 +38,11 @@ function App() {
 
 					{/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
+
 					<Switch>
-						<Route path="/about">
+						{/* <Route path="/about">
 							<About />
-						</Route>
+						</Route> */}
 						<Route path="/users">{/* <Users /> */}</Route>
 						<Route path="/submit">
 							<SubmitForm />

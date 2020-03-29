@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { API, graphqlOperation } from 'aws-amplify';
 import { listBuisnesss } from '../graphql/queries';
+import { FaGlobeAmericas, FaCoins, FaWarehouse } from 'react-icons/fa';
 
 export default class HomeTop3 extends React.Component {
 	state = {
@@ -25,10 +26,22 @@ export default class HomeTop3 extends React.Component {
 						<div className="home-top-3__inner col-xl-4">
 							<div className="item">
 								<h1>{buisness.nameOfBusiness}</h1>
-								<p>{buisness.yourName}</p>
-								<p>{buisness.deal}</p>
-								<p>{buisness.siteURL}</p>
-								<p>{buisness.image}</p>
+
+								{/* <p>
+									<FaWarehouse />
+									&nbsp;{buisness.yourName}
+								</p> */}
+								<p>
+									<FaCoins />
+									&nbsp;
+									{buisness.deal}
+								</p>
+								<p>
+									<FaGlobeAmericas />
+									&nbsp;
+									{buisness.siteURL}
+								</p>
+								{/* <p>{buisness.image}</p> */}
 							</div>
 						</div>
 					))}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, InputGroup, FormControl } from 'react-bootstrap';
+import { Button, InputGroup, FormControl, Form } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { API, graphqlOperation } from 'aws-amplify';
 import { createBuisness } from '../graphql/mutations';
@@ -144,6 +144,16 @@ export default class SubmitForm extends React.Component {
 							aria-describedby="inputGroup-sizing-sm"
 						/>
 					</InputGroup>
+					<Form.Group controlId="exampleForm.ControlSelect1">
+						<Form.Label>Category of business</Form.Label>
+						<Form.Control as="select">
+							<option>Food</option>
+							<option>Retail</option>
+							<option>Online</option>
+							{/* <option>4</option>
+							<option>5</option> */}
+						</Form.Control>
+					</Form.Group>
 					<Button onClick={() => this.addInfo()} className="home-main__button" variant="primary" size="lg">
 						Submit
 					</Button>{' '}
