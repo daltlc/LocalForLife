@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, browserHistory, Link, Route, Switch } from 'react-router-dom';
 
 ReactDOM.render(
 	<React.StrictMode>
-		{/* <BrowserRouter forceRefresh={true}> */}
-		<App />
-		{/* </BrowserRouter> */}
+		<BrowserRouter history={browserHistory} forceRefresh={true}>
+			<App />
+		</BrowserRouter>
 	</React.StrictMode>,
 	document.getElementById('root')
 );
