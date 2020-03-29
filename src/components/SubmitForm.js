@@ -5,7 +5,7 @@ import { API, graphqlOperation } from 'aws-amplify';
 import { createBuisness } from '../graphql/mutations';
 import { withRouter } from 'react-router-dom';
 
-export default class SubmitForm extends React.Component {
+class SubmitForm extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -17,6 +17,9 @@ export default class SubmitForm extends React.Component {
 			siteURL: '',
 			businesses: []
 		};
+	}
+	nextPath(path) {
+		this.props.history.push(path);
 	}
 	handleOnChange = (event) => {
 		this.setState({
@@ -48,9 +51,8 @@ export default class SubmitForm extends React.Component {
 			siteURL: '',
 			phoneNumber: ''
 		});
-		console.log('done');
 
-		// this.props.history.push(path);
+		this.nextPath('/');
 	};
 	render() {
 		return (
@@ -166,11 +168,19 @@ export default class SubmitForm extends React.Component {
 							<option>5</option>
 						</Form.Control>
 					</Form.Group> */}
-					<Button onClick={() => this.addInfo()} className="home-main__button" variant="primary" size="lg">
-						Submit
-					</Button>{' '}
+					<div>
+						<Button
+							onClick={() => this.addInfo()}
+							className="home-main__button"
+							variant="primary"
+							size="lg"
+						>
+							Submit
+						</Button>{' '}
+					</div>
 				</div>
 			</div>
 		);
 	}
 }
+export default withRouter(SubmitForm);

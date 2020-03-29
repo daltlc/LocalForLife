@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import HomeTop3 from './HomeTop3';
 import { withRouter } from 'react-router-dom';
 
-class NavComp extends React.Component {
+class HomeContent extends React.Component {
 	nextPath(path) {
 		this.props.history.push(path);
 	}
@@ -52,4 +52,4 @@ class NavComp extends React.Component {
 		);
 	}
 }
-export default withRouter(NavComp);
+export default withRouter(HomeContent);
