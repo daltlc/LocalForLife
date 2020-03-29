@@ -10,6 +10,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Navbar, Nav, Form, Button, FormControl } from 'react-bootstrap';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import config from './aws-exports';
+import { FaInstagram } from 'react-icons/fa';
+
 Amplify.configure(config);
 function App() {
 	return (
@@ -35,6 +37,11 @@ function App() {
 								<Link to="/allbusinesses">All Businesses</Link>
 							</Nav.Link>
 						</Nav>
+						<Navbar.Collapse className="justify-content-end">
+							<a href="https://www.instagram.com/seattlelocalforlife/">
+								<FaInstagram />
+							</a>
+						</Navbar.Collapse>
 					</Navbar>
 
 					{/* A <Switch> looks through its children <Route>s and
