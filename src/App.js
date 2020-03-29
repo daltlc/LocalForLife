@@ -39,6 +39,7 @@ function App() {
 								<Nav.Link href="#allbusinesses">
 									<Link to="/allbusinesses">All Businesses</Link>
 								</Nav.Link>
+								<Nav.Link href="mailto:seattlelocalforlife@gmail.com">Contact</Nav.Link>
 							</Nav>
 							<Navbar.Collapse className="justify-content-end">
 								<a href="https://www.instagram.com/seattlelocalforlife/">

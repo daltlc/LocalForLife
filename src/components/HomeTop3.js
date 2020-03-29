@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { API, graphqlOperation } from 'aws-amplify';
 import { listBuisnesss } from '../graphql/queries';
 import { FaGlobeAmericas, FaCoins, FaWarehouse, FaPhone } from 'react-icons/fa';
+let Filter = require('bad-words'),
+	filter = new Filter();
 
 export default class HomeTop3 extends React.Component {
 	state = {

@@ -8,7 +8,7 @@ export default class HomeTop3 extends React.Component {
 		return (
 			<div className="container">
 				<div className="row">
-					<Card style={{ width: '18rem' }}>
+					<Card style={{ width: '100%', marginBottom: '20px' }}>
 						<Card.Header>
 							<strong>Resource Links</strong>
 						</Card.Header>

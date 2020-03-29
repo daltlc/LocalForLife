@@ -14,6 +14,9 @@ export default class HomeTop3 extends React.Component {
 								<FaInstagram />
 							</a>
 						</Navbar.Collapse>
+						<Navbar.Collapse className="justify-content-end">
+							<Navbar.Text>seattlelocalforlife@gmail.com</Navbar.Text>
+						</Navbar.Collapse>
 					</Navbar.Collapse>
 				</Navbar>
 			</div>
