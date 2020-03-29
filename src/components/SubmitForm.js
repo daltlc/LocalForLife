@@ -65,7 +65,7 @@ export default class SubmitForm extends React.Component {
 					<ul className="list-no-styles">
 						<li>You MUST be a local business</li>
 						<li>Only one submission per business</li>
-						<li>The value of your offer must be at least a $5 </li>
+						<li>The value of your offer must be at least $5 </li>
 						<li>We reserve the right to decline submissions for any reason</li>
 						<li>
 							These promotions are meant to offer community and small business support, while maintaining
