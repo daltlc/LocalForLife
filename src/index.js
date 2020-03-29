@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter, browserHistory, Link, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<BrowserRouter history={browserHistory} forceRefresh={true}>
+		<BrowserRouter forceRefresh={true}>
 			<App />
 		</BrowserRouter>
 	</React.StrictMode>,
