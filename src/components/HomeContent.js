@@ -22,6 +22,10 @@ class NavComp extends React.Component {
 							call for social distancing, we are working to create a network where people can engage local
 							businesses remotely.
 						</p>
+						<p>
+							This site will be crowd sourced and allow local businesses to offer promotions that may be
+							accessed remotely by everyone, such as coupon codes, discounts, deals or gift cards.
+						</p>
 						<p>Join us now by submitting your favorite local business or submit your own local business!</p>
 						<Button
 							onClick={() => this.nextPath('/submit')}
