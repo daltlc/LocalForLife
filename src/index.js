@@ -4,12 +4,6 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
-const history = createBrowserHistory();
-const path = (/#!(\/.*)$/.exec(window.location.hash) || [])[1];
-if (path) {
-	history.replace(path);
-}
 
 ReactDOM.render(
 	<React.StrictMode>

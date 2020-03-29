@@ -12,6 +12,12 @@ import { Navbar, Nav, Form, Button, FormControl } from 'react-bootstrap';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
 import config from './aws-exports';
 import { FaInstagram } from 'react-icons/fa';
+import { createBrowserHistory } from 'history';
+const history = createBrowserHistory();
+const path = (/#!(\/.*)$/.exec(window.location.hash) || [])[1];
+if (path) {
+	history.replace(path);
+}
 
 Amplify.configure(config);
 function App() {
