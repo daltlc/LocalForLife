@@ -22,7 +22,7 @@ class NavComp extends React.Component {
 							call for social distancing, we are working to create a network where people can engage local
 							businesses remotely.
 						</p>
-						<p>Join us in helping now or submit your own local business!</p>
+						<p>Join us now by submitting your favorite local business or submit your own local business!</p>
 						<Button
 							onClick={() => this.nextPath('/submit')}
 							className="home-main__button"
