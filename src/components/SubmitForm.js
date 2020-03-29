@@ -52,7 +52,7 @@ class SubmitForm extends React.Component {
 			phoneNumber: ''
 		});
 
-		this.nextPath('/');
+		this.nextPath('/allbusinesses');
 	};
 	render() {
 		return (
