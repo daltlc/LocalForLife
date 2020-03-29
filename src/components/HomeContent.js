@@ -29,7 +29,7 @@ class NavComp extends React.Component {
 							variant="primary"
 							size="lg"
 						>
-							Submit your buisness
+							Submit your business
 						</Button>{' '}
 					</div>
 				</div>

@@ -4,7 +4,6 @@ type Buisness @model {
 	phoneNumber: String
 	nameOfBusiness: String!
 	yourEmail: String
-	image: String
 	deal: String
 	siteURL: String
 }
