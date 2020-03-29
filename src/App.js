@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import HomeContent from './components/HomeContent';
 import SubmitForm from './components/SubmitForm';
 import About from './components/About';
+import Resources from './components/Resources';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Navbar, Nav, Form, Button, FormControl } from 'react-bootstrap';
 import Amplify, { API, graphqlOperation } from 'aws-amplify';
@@ -23,14 +24,14 @@ function App() {
 							<Nav.Link href="#home">
 								<Link to="/">Home</Link>
 							</Nav.Link>
-							<Nav.Link href="#home">
+							<Nav.Link href="#about">
 								<Link to="/about">About</Link>
 							</Nav.Link>
-							<Nav.Link href="#home">
+							<Nav.Link href="#submit">
 								<Link to="/submit">Submit</Link>
 							</Nav.Link>
-							<Nav.Link href="#home">
-								<Link to="/users">Resources</Link>
+							<Nav.Link href="#resources">
+								<Link to="/resources">Resources</Link>
 							</Nav.Link>
 						</Nav>
 					</Navbar>
@@ -45,7 +46,9 @@ function App() {
 						<Route path="/submit">
 							<SubmitForm />
 						</Route>
-						<Route path="/resources">{/* <Users /> */}</Route>
+						<Route path="/resources">
+							<Resources />
+						</Route>
 
 						<Route path="/">
 							<HomeContent />

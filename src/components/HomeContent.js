@@ -33,6 +33,16 @@ class NavComp extends React.Component {
 					</div>
 				</div>
 				<HomeTop3 />
+				<div className="viewa-all-button-container">
+					<Button
+						onClick={() => this.nextPath('/submit')}
+						className="home-main__button"
+						variant="primary"
+						size="lg"
+					>
+						View All
+					</Button>{' '}
+				</div>
 			</div>
 		);
 	}

@@ -12,7 +12,7 @@
     }
   }
 
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 
   .logo {
     font-weight: bold;
@@ -27,6 +27,11 @@
     Verdana,
     sans-serif;
 
+    .viewa-all-button-container{
+      display: flex;
+      justify-content: center;
+    }
+
   &__left {
     background-color: #fff;
     color: black;
@@ -38,7 +43,7 @@
   }
 
   &__button {
-    margin-top: 40px !important;
+    margin-top: 30px !important;
     margin-bottom: 20px;
   }
 
@@ -47,10 +52,14 @@
     margin-top: 40px;
 
     .item {
-      background-color: #fff;
+      background-color: #E1E4EA;
       padding: 20px;
       color: black;
-      text-align: center;
+      text-align: left;
+      h1{
+        text-align: center;
+        font-size: 34px;
+      }
     }
   }
 
