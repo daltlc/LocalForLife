@@ -49,7 +49,7 @@ export default class SubmitForm extends React.Component {
 			image: ''
 		});
 
-		this.props.history.push(path);
+		// this.props.history.push(path);
 	};
 	render() {
 		return (
@@ -78,7 +78,7 @@ export default class SubmitForm extends React.Component {
 				<div className="col-xl-6">
 					<InputGroup size="sm" className="mb-3">
 						<InputGroup.Prepend>
-							<InputGroup.Text id="inputGroup-sizing-sm">Your Name</InputGroup.Text>
+							<InputGroup.Text id="inputGroup-sizing-sm">Your Name*</InputGroup.Text>
 						</InputGroup.Prepend>
 						<FormControl
 							name="yourName"
@@ -89,7 +89,7 @@ export default class SubmitForm extends React.Component {
 					</InputGroup>
 					<InputGroup size="sm" className="mb-3">
 						<InputGroup.Prepend>
-							<InputGroup.Text id="inputGroup-sizing-sm">Email Address</InputGroup.Text>
+							<InputGroup.Text id="inputGroup-sizing-sm">Email Address*</InputGroup.Text>
 						</InputGroup.Prepend>
 						<FormControl
 							type="text"
@@ -101,7 +101,7 @@ export default class SubmitForm extends React.Component {
 					</InputGroup>
 					<InputGroup size="sm" className="mb-3">
 						<InputGroup.Prepend>
-							<InputGroup.Text id="inputGroup-sizing-sm">Name of Buisness</InputGroup.Text>
+							<InputGroup.Text id="inputGroup-sizing-sm">Name of Buisness*</InputGroup.Text>
 						</InputGroup.Prepend>
 						<FormControl
 							type="text"
@@ -113,7 +113,7 @@ export default class SubmitForm extends React.Component {
 					</InputGroup>
 					<InputGroup size="sm" className="mb-3">
 						<InputGroup.Prepend>
-							<InputGroup.Text id="inputGroup-sizing-sm">Deal</InputGroup.Text>
+							<InputGroup.Text id="inputGroup-sizing-sm">Deal*</InputGroup.Text>
 						</InputGroup.Prepend>
 						<FormControl
 							name="deal"
@@ -124,7 +124,7 @@ export default class SubmitForm extends React.Component {
 					</InputGroup>
 					<InputGroup size="sm" className="mb-3">
 						<InputGroup.Prepend>
-							<InputGroup.Text id="inputGroup-sizing-sm">Site URL</InputGroup.Text>
+							<InputGroup.Text id="inputGroup-sizing-sm">Site URL*</InputGroup.Text>
 						</InputGroup.Prepend>
 						<FormControl
 							name="siteURL"
@@ -135,7 +135,7 @@ export default class SubmitForm extends React.Component {
 					</InputGroup>
 					<InputGroup size="sm" className="mb-3">
 						<InputGroup.Prepend>
-							<InputGroup.Text id="inputGroup-sizing-sm">Upload Image</InputGroup.Text>
+							<InputGroup.Text id="inputGroup-sizing-sm">Upload Image*</InputGroup.Text>
 						</InputGroup.Prepend>
 						<FormControl
 							name="image"
