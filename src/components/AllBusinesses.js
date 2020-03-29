@@ -3,7 +3,7 @@ import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { API, graphqlOperation } from 'aws-amplify';
 import { listBuisnesss } from '../graphql/queries';
-import { FaGlobeAmericas, FaCoins, FaWarehouse } from 'react-icons/fa';
+import { FaGlobeAmericas, FaCoins, FaWarehouse, FaPhone } from 'react-icons/fa';
 
 export default class AllBusinesses extends React.Component {
 	state = {
@@ -26,7 +26,6 @@ export default class AllBusinesses extends React.Component {
 						<div className="all-businesses-main__inner col-xl-4">
 							<div className="item">
 								<h1>{buisness.nameOfBusiness}</h1>
-
 								{/* <p>
 									<FaWarehouse />
 									&nbsp;{buisness.yourName}
@@ -41,7 +40,10 @@ export default class AllBusinesses extends React.Component {
 									&nbsp;
 									{buisness.siteURL}
 								</p>
-								{/* <p>{buisness.image}</p> */}
+								<p>
+									<FaPhone />
+									&nbsp;{buisness.phoneNumber}
+								</p>{' '}
 							</div>
 						</div>
 					))}

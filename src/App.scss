@@ -27,7 +27,7 @@
     Verdana,
     sans-serif;
 
-  .viewa-all-button-container {
+  .view-all-button-container {
     display: flex;
     justify-content: center;
   }
@@ -50,6 +50,8 @@
   .home-top-3 {
     // height: 35vh;
     margin-top: 40px;
+    border-top: solid #cecece 0.2px;
+    padding-top:20px;
 
 
     &__inner {
