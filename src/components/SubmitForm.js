@@ -79,6 +79,7 @@ class SubmitForm extends React.Component {
 					<strong>Stay safe and support local!</strong>
 				</div>
 				<div className="col-xl-7 submit-main__form">
+					<h3>Required fields*</h3>
 					<InputGroup size="sm" className="mb-3">
 						<InputGroup.Prepend>
 							<InputGroup.Text id="inputGroup-sizing-sm">Your Name*</InputGroup.Text>
