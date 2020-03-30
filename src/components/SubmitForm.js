@@ -13,7 +13,7 @@ class SubmitForm extends React.Component {
 			nameOfBusiness: '',
 			yourName: '',
 			deal: '',
-			phoneNumber: '',
+			// phoneNumber: '',
 			siteURL: '',
 			businesses: []
 		};
@@ -28,14 +28,13 @@ class SubmitForm extends React.Component {
 	};
 
 	addInfo = async (event, path) => {
-		const { yourEmail, nameOfBusiness, yourName, deal, siteURL, phoneNumber, businesses } = this.state;
+		const { yourEmail, nameOfBusiness, yourName, deal, siteURL, businesses } = this.state;
 
 		const input = {
 			yourEmail,
 			nameOfBusiness,
 			yourName,
 			deal,
-			phoneNumber,
 			siteURL
 		};
 
@@ -48,8 +47,7 @@ class SubmitForm extends React.Component {
 			nameOfBusiness: '',
 			yourName: '',
 			deal: '',
-			siteURL: '',
-			phoneNumber: ''
+			siteURL: ''
 		});
 
 		this.nextPath('/allbusinesses');
@@ -137,7 +135,7 @@ class SubmitForm extends React.Component {
 							aria-describedby="inputGroup-sizing-sm"
 						/>
 					</InputGroup>
-					<InputGroup size="sm" className="mb-3">
+					{/* <InputGroup size="sm" className="mb-3">
 						<InputGroup.Prepend>
 							<InputGroup.Text id="inputGroup-sizing-sm">Phone Number*</InputGroup.Text>
 						</InputGroup.Prepend>
@@ -147,7 +145,7 @@ class SubmitForm extends React.Component {
 							aria-label="Small"
 							aria-describedby="inputGroup-sizing-sm"
 						/>
-					</InputGroup>
+					</InputGroup> */}
 					{/* <InputGroup size="sm" className="mb-3">
 						<InputGroup.Prepend>
 							<InputGroup.Text id="inputGroup-sizing-sm">Upload Image*</InputGroup.Text>

@@ -43,10 +43,10 @@ export default class HomeTop3 extends React.Component {
 									&nbsp;
 									<a href={buisness.siteURL}>Website or Deal</a>
 								</p>
-								<p>
+								{/* <p>
 									<FaPhone />
 									&nbsp;{buisness.phoneNumber}
-								</p>
+								</p> */}
 							</div>
 						</div>
 					))}

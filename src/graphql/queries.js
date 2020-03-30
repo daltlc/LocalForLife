@@ -6,7 +6,6 @@ export const getBuisness = /* GraphQL */ `
     getBuisness(id: $id) {
       id
       yourName
-      phoneNumber
       nameOfBusiness
       yourEmail
       deal
@@ -24,7 +23,6 @@ export const listBuisnesss = /* GraphQL */ `
       items {
         id
         yourName
-        phoneNumber
         nameOfBusiness
         yourEmail
         deal
