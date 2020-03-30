@@ -18,15 +18,18 @@ class HomeContent extends React.Component {
 						<h1>We want to empower the creativity, diversity and community that makes our city thrive.</h1>
 						<br />
 						<p>
-							In an effort to support businesses during these trying times of global health concern and a
-							call for social distancing, we are working to create a network where people can engage local
+							In an effort to support local businesses during this time of global health concern and call
+							for social distancing, we are working to create a network where people can engage local
 							businesses remotely.
 						</p>
 						<p>
 							This site will be crowd sourced and allow local businesses to offer promotions that may be
 							accessed remotely by everyone, such as coupon codes, discounts, deals or gift cards.
 						</p>
-						<p>Join us now by submitting your favorite local business or submit your own local business!</p>
+						<p>
+							Join us now by submitting your favorite local business or submit your own local business
+							today!
+						</p>
 						<Button
 							onClick={() => this.nextPath('/submit')}
 							className="home-main__button"

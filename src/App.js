@@ -21,9 +21,11 @@ function App() {
 			<header className="header" />
 			<Router>
 				<div className="container">
-					<Navbar bg="light" expand="lg">
+					<Navbar className="nav-main" bg="light" expand="lg">
 						<Navbar.Brand href="#home">
-							<strong>LocalForLife</strong>
+							<Link to="/">
+								<strong>LocalForLife</strong>
+							</Link>
 						</Navbar.Brand>
 						<Navbar.Toggle aria-controls="basic-navbar-nav" />
 						<Navbar.Collapse id="basic-navbar-nav" className="nav-main">

@@ -61,22 +61,22 @@ class SubmitForm extends React.Component {
 					<h1>Promotion Submission</h1>
 					<p>
 						In this global time of need, local solidarity is everything. Please use this form if you are a
-						local business offering a promotion that may be accessed remotely.
+						local business or know of one offering a promotion that may be accessed remotely or in the
+						future.
+					</p>
+					<p>
+						These promotions are meant to offer community and small business support, while maintaining the
+						safety of both.
 					</p>
 					<p>PLEASE READ</p>
 					<p>Follow these rules to submit your promotion: </p>
 					<ul className="list-no-styles">
-						<li>You MUST be a local business</li>
-						<li>Only one submission per business</li>
-						<li>The value of your offer must be at least $5 </li>
-						<li>We reserve the right to decline submissions for any reason</li>
-						<li>
-							These promotions are meant to offer community and small business support, while maintaining
-							the safety of both. Your discount must be accessed remotely, or to be used at a later date
-							if businesses are currently closed.
-						</li>
+						<li>You MUST be a local Seattle business.</li>
+						<li>Only one submission per business.</li>
+						<li>The value of your offer must be at least $5. </li>
+						<li>We reserve the right to remove submissions for any reason.</li>
 					</ul>
-					Stay safe and support local!
+					<strong>Stay safe and support local!</strong>
 				</div>
 				<div className="col-xl-7 submit-main__form">
 					<InputGroup size="sm" className="mb-3">
@@ -104,7 +104,7 @@ class SubmitForm extends React.Component {
 					</InputGroup>
 					<InputGroup size="sm" className="mb-3">
 						<InputGroup.Prepend>
-							<InputGroup.Text id="inputGroup-sizing-sm">Name of Buisness*</InputGroup.Text>
+							<InputGroup.Text id="inputGroup-sizing-sm">Name of Business*</InputGroup.Text>
 						</InputGroup.Prepend>
 						<FormControl
 							type="text"
