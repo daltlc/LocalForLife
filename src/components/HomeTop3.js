@@ -28,7 +28,6 @@ export default class HomeTop3 extends React.Component {
 						<div className="home-top-3__inner col-xl-4">
 							<div className="item">
 								<h1>{buisness.nameOfBusiness}</h1>
-
 								{/* <p>
 									<FaWarehouse />
 									&nbsp;{buisness.yourName}
@@ -38,11 +37,11 @@ export default class HomeTop3 extends React.Component {
 									&nbsp;
 									{buisness.deal}
 								</p>
-								<p>
+								<Button href={buisness.siteURL} className="home-main__button" size="lg">
 									<FaGlobeAmericas />
 									&nbsp;
-									<a href={buisness.siteURL}>Website or Deal</a>
-								</p>
+									<a>Website or Deal</a>
+								</Button>{' '}
 								{/* <p>
 									<FaPhone />
 									&nbsp;{buisness.phoneNumber}

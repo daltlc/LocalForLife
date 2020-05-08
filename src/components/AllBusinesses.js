@@ -9,6 +9,7 @@ export default class AllBusinesses extends React.Component {
 	state = {
 		businesses: []
 	};
+
 	async componentDidMount() {
 		try {
 			const businesses = await API.graphql(graphqlOperation(listBuisnesss));
@@ -18,6 +19,7 @@ export default class AllBusinesses extends React.Component {
 			console.log('error:', err);
 		}
 	}
+
 	render() {
 		return (
 			<div className="all-businesses-main">
@@ -35,11 +37,11 @@ export default class AllBusinesses extends React.Component {
 									&nbsp;
 									{buisness.deal}
 								</p>
-								<p>
+								<Button href={buisness.siteURL} className="home-main__button" size="lg">
 									<FaGlobeAmericas />
 									&nbsp;
-									<a href={buisness.siteURL}>Website or Deal</a>
-								</p>
+									<a>Website or Deal</a>
+								</Button>{' '}
 								{/* <p>
 									<FaPhone />
 									&nbsp;{buisness.phoneNumber}

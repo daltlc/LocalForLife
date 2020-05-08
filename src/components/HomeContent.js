@@ -30,24 +30,14 @@ class HomeContent extends React.Component {
 							Join us now by submitting your favorite local business or submit your own local business
 							today!
 						</p>
-						<Button
-							onClick={() => this.nextPath('/submit')}
-							className="home-main__button"
-							variant="primary"
-							size="lg"
-						>
+						<Button onClick={() => this.nextPath('/submit')} className="home-main__button" size="lg">
 							Submit your business
 						</Button>{' '}
 					</div>
 				</div>
 				<HomeTop3 />
 				<div className="view-all-button-container">
-					<Button
-						onClick={() => this.nextPath('/allbusinesses')}
-						className="home-main__button"
-						variant="primary"
-						size="lg"
-					>
+					<Button onClick={() => this.nextPath('/allbusinesses')} className="home-main__button" size="lg">
 						View All
 					</Button>{' '}
 				</div>

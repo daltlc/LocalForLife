@@ -168,12 +168,7 @@ class SubmitForm extends React.Component {
 						</Form.Control>
 					</Form.Group> */}
 					<div>
-						<Button
-							onClick={() => this.addInfo()}
-							className="home-main__button"
-							variant="primary"
-							size="lg"
-						>
+						<Button onClick={() => this.addInfo()} className="home-main__button" size="lg">
 							Submit
 						</Button>{' '}
 					</div>
