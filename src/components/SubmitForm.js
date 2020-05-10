@@ -71,7 +71,6 @@ class SubmitForm extends React.Component {
 					<ul className="list-no-styles">
 						<li>You MUST be a local Seattle business.</li>
 						<li>Only one submission per business.</li>
-						<li>The value of your offer must be at least $5 unless its 100% for charity or nonprofit. </li>
 						<li>We reserve the right to remove submissions for any reason.</li>
 					</ul>
 					<strong>Stay safe and support local!</strong>
